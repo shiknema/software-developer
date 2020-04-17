@@ -1,0 +1,241 @@
+/***********************************
+  Genral Setting
+  ***********************************/
+  
+  @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    background: #F2F2F2;
+    color: #323232;
+  }
+  
+  img {
+    max-width: 100%;
+    
+    
+  }
+  
+  .icon {
+    fill: currentColor;
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .container {
+    max-width: 980px;
+  
+    margin: 40px auto;
+    padding: 32px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .column-section{
+    column-count: 3;
+   column-gap: 40px;
+   column-rule: transparent;
+  }
+
+  section {
+    max-width: 1000px;
+    display: grid;
+    grid-gap: 10px;
+    padding: 22px ;
+    border-bottom: 1px solid lightgrey;
+  
+
+  }
+  
+  section:last-child {
+    border-bottom: none;
+  }
+  
+  .section-title {
+    
+    font-weight: bold;
+    font-size: 22px;
+  }
+  
+  ul
+  {
+    font-family: 'Source Sans Pro', sans-serif
+    ;font-size: 14px;
+    margin-left: 20px;
+    list-style: disc;
+    font-size: medium;
+  }
+  
+  p{
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .contact
+  {
+    display: flex;
+    block-size: 28px;
+    width: fit-content;
+    background-color:black; 
+    padding: 6px; 
+      
+  }
+  .contact-text
+{
+    font-display: center;
+    background-color:black; 
+    color:white; 
+    padding: 1px; 
+    font-size:13px;
+    pointer-events: fill;
+   
+    
+}
+ .contact-icon
+ {
+    background-color:black; 
+    color:white; 
+    padding: 1px; 
+  
+ }
+
+  ol {
+    max-width: 350px;
+    counter-reset: my-awesome-counter;
+    list-style: none;
+    padding-left: 30px;
+  }
+  ol li {
+    margin: 0 0 0.5rem 0;
+    counter-increment: my-awesome-counter;
+    position: relative;
+  }
+  ol li::before {
+    content: counter(my-awesome-counter);
+    color:white;
+    font-size: 1 rem;
+    font-weight: bold;
+    position: absolute;
+    --size: 28px;
+    left: calc(-1 * var(--size) - 10px);
+    line-height: var(--size);
+    width: var(--size);
+    height: var(--size);
+    top: 0;
+   
+    background: black;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 1px 1px 0 #999;
+  }
+
+  .icon {
+    fill: currentColor;
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+  }
+  /***********************************
+  * =Main Info
+  ***********************************/
+  
+  .avatar {
+   max-width: 100px;   
+    border-radius: 100%;
+    border-style: solid;
+    border-color: black;
+    border-width: thick;
+  }
+  
+  .my-name {
+    font-family: 'Cinzel';
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 1;
+  }
+  
+  .my-title {
+    font-size: 20px;
+    font-weight: 300;
+    color: grey;
+  }
+  
+  .links {
+    display: flex;
+    margin: 10px 0 10px 0;
+  }
+  
+  .link-item {
+    display: flex;
+    font-size: medium;
+    flood-color:white;
+    align-items: center;
+    flex: 1;
+  }
+  
+  
+  
+  /***********************************
+   Work Experience & Education
+  ***********************************/
+  
+  .job {
+  
+    padding-bottom: auto;
+    margin-bottom: 28px;
+  
+  }
+  
+  .job:last-child {
+    border-bottom: yellow;
+  }
+  
+  .job-title-container {
+  
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 16px;
+    
+  }
+  
+  .job-title-container1 {
+  
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 16px;
+    max-height: 100px;
+  }
+  
+  .job-company {
+      font-size: 17px;
+      font-weight: bold;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+   
+  .total-Exp {
+      font-size: small;
+      color: darkgray;
+      padding-bottom: 10px;
+  }
+  
+  
